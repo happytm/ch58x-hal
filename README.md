@@ -23,7 +23,7 @@ This should be the reference hal implementation for CH57x, CH58x, CH59x.
  - Download Rust installer from here https://rustup.rs/
  - Use option 2 and enter default host triple as "x86_64-pc-windows-gnu" and use enter key for all other options.
  - Now use option 1 to proceed with installation(default). This will use default host triple "x86_64-pc-windows-gnu".
- # Now use following 3 commands in project root directory:
+ ### Now use following 3 commands in project root directory:
  - cargo install cargo-binutils
  - rustup component add llvm-tools
  - cargo objcopy --release --example blinky -- -O ihex blinky.hex
