@@ -28,7 +28,7 @@ This should be the reference hal implementation for CH57x, CH58x, CH59x.
  - rustup component add llvm-tools
  - cargo objcopy --release --example blinky -- -O ihex blinky.hex
  - Use official WCHISP tool from WCH to flash *.hex file. Tool can be downloaded from here https://www.wch-ic.com/downloads/WCHISPTool_Setup_exe.html
-### I used this very inexpensive BLE developement board from WeAct Studio - https://github.com/WeActStudio/WeActStudio.WCH-BLE-Core
+### I used this very inexpensive BLE developement board (which support coded PHY 1KM range) from WeAct Studio - https://github.com/WeActStudio/WeActStudio.WCH-BLE-Core
  - https://www.aliexpress.us/item/3256804598673258.html?spm=a2g0o.store_pc_groupList.8148356.54.7d8a7b26VcHolM&pdp_npi=4%40dis%21USD%21US%20%242.28%21US%20%240.99%21%21%2116.24%217.05%21%402103250717043122710356394e0c03%2112000034304021507%21sh%21US%212368685392%21&gatewayAdapt=glo2usa
 
 ## Features
