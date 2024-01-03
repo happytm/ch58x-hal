@@ -18,7 +18,14 @@ HAL for the CH58x RISC-V BLE microcotrollers from WCH.
 This crate is under random and active development. DO NOT USE in production.
 
 This should be the reference hal implementation for CH57x, CH58x, CH59x.
-
+## How to setup Rust embedded environment on Windows 7 Machine:
+ - Download Rust installer from here https://rustup.rs/
+ - Use option 2 and enter default host triple as "x86_64-pc-windows-gnu" and use enter key for all other options.
+ - Now use option 1 to proceed with installation(default). This will use default host triple "x86_64-pc-windows-gnu".
+ - cargo install cargo-binutils
+ - rustup component add llvm-tools
+ - cargo objcopy --release --example blinky -- -O ihex blinky.hex
+ - Use official WCHISP tool from WCH to flash *.hex file. Tool can be downloaded from here https://www.wch-ic.com/downloads/WCHISPTool_Setup_exe.html
 ## Features
 
 - Basic: clock init, delay, interrupt, etc.
